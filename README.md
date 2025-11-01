@@ -146,13 +146,8 @@ background: #f8fafc;
 ## 📸 Captures d'écran
 
 ### Desktop
-![Page d'accueil Desktop](screenshots/desktop.png)
-
-### Tablette
-![Version Tablette](screenshots/tablet.png)
-
-### Mobile
-![Version Mobile](screenshots/mobile.png)
+![Page d'accueil Desktop](<img width="1863" height="1501" alt="image" src="https://github.com/user-attachments/assets/3125fa84-7c76-4f46-a858-9c66a2f299bb" />
+)
 
 *Note : Ajoutez vos propres captures d'écran dans un dossier `/screenshots/`*
 
