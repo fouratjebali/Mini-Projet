@@ -235,8 +235,7 @@ Ce projet répond aux contraintes suivantes :
 
 ## 👥 Auteurs
 
-- **Fourat Jebali** - *Développement initial* - [GitHub](https://github.com/votre-nom)
-- **[Nom du binôme]** - *Contribution* - [GitHub](https://github.com/)
+- **Fourat Jebali** - *Développement initial* - [GitHub](https://github.com/fouratjebali)
 
 ## 🎓 Contexte académique
 
@@ -254,9 +253,8 @@ Ce projet est un projet académique libre d'utilisation à des fins éducatives.
 
 Pour toute question ou suggestion :
 
-- 📧 Email : [votre.email@example.com]
-- 💼 LinkedIn : [Votre profil LinkedIn]
-- 🐦 Twitter : [@votre_compte]
+- 📧 Email : [fouratcs@example.com]
+- 💼 LinkedIn : [Fourat Jeabli]
 
 ---
 
@@ -265,7 +263,6 @@ Pour toute question ou suggestion :
 - [Unsplash](https://unsplash.com/) pour les magnifiques images gratuites
 - [MDN Web Docs](https://developer.mozilla.org/) pour la documentation
 - [CSS-Tricks](https://css-tricks.com/) pour les tutoriels sur CSS Grid
-- Nos professeurs pour leur accompagnement
 
 ---
 
