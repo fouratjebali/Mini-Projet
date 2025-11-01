@@ -24,8 +24,6 @@ Un mini magazine en ligne moderne et responsive, développé en HTML5 et CSS3 pu
 
 **Mini Mag** est un magazine en ligne présentant 9 articles organisés par catégories (Culture, Tech, Voyage). Le site offre une expérience utilisateur fluide avec des animations subtiles et un design responsive qui s'adapte à tous les appareils.
 
-🔗 **[Voir la démo en ligne](#)** *(Remplacez par votre lien GitHub Pages)*
-
 ## ✨ Fonctionnalités
 
 - 📱 **Responsive Design** : Adaptation automatique sur mobile, tablette et desktop
