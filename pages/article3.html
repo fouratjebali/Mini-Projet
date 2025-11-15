@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,7 @@
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
   <a href="#contenu" class="visually-hidden">Aller au contenu principal</a>
   <header class="header">
@@ -31,7 +33,9 @@
     </header>
 
     <figure class="cover">
-      <img src="https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/naples-nap/npa1-leisurely-sorrento/stock-photo-landscape-with-atrani-town-at-famous-amalfi-coast-italy-1436187389.jpg?w=1920" alt="Vue sur le golfe avec la ville en contrebas">
+      <img
+        src="https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/naples-nap/npa1-leisurely-sorrento/stock-photo-landscape-with-atrani-town-at-famous-amalfi-coast-italy-1436187389.jpg?w=1920"
+        alt="Vue sur le golfe avec la ville en contrebas">
     </figure>
 
     <article class="prose">
@@ -46,6 +50,21 @@
       </ul>
       <p><a href="../index.html">← Retour à l’accueil</a></p>
     </article>
+    
+    <section class="interactions">
+      <button class="like-btn" data-id="article3">
+        ❤️ Like <span class="like-count">0</span>
+      </button>
+
+      <h3>Commentaires</h3>
+      <div class="comments" data-id="article3"></div>
+
+      <form class="comment-form" data-id="article3">
+        <input type="text" placeholder="Ajouter un commentaire..." required>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -53,5 +72,7 @@
       © 2025 MiniMAG — All Rights Reserved. Fourat Jebali :3
     </div>
   </footer>
+  <script type="module" src="../js/app.js"></script>
 </body>
+
 </html>

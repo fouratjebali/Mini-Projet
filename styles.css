@@ -239,6 +239,193 @@ button:focus-visible {
 .byline {
   color: #64748b;
 }
+/* === LIKES & COMMENTAIRES === */
+.like-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .4rem .7rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #334155;
+  transition: transform .1s ease, background .2s ease;
+}
+
+.like-btn:hover {
+  background: #e0f7f4;
+  transform: scale(1.05);
+}
+
+.like-btn:active {
+  transform: scale(0.95);
+}
+
+.like-count {
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.comments {
+  margin-top: 1rem;
+  padding-left: .5rem;
+}
+
+.comment-form input {
+  width: 70%;
+  padding: .5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.comment-form button {
+  padding: .5rem .8rem;
+  border-radius: 8px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background: #14b8a6;
+}
+/* === TEMOIGNAGES === */
+.testimonials {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  background: #ecfdf5;
+  border-top: 2px solid #99f6e4;
+  border-bottom: 2px solid #99f6e4;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.testimonials h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #0f766e;
+}
+
+.testimonial {
+  opacity: 0;
+  transition: opacity .8s ease;
+  font-size: 1.1rem;
+  color: #0f172a;
+  margin: .5rem auto;
+  max-width: 700px;
+}
+
+.testimonial:first-child {
+  opacity: 1;
+}
+/* === CARROUSEL === */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 16px;
+}
+.carousel h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #0f766e;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform .35s ease;
+}
+
+.carousel-track img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(15, 23, 42, 0.6);
+  color: #ffffff;
+  border: none;
+  font-size: 1.2rem;
+  padding: .6rem .8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background .2s ease;
+  z-index: 5;
+}
+
+.carousel button:hover {
+  background: rgba(20, 184, 166, 0.8);
+}
+
+.carousel .prev { left: .5rem; }
+.carousel .next { right: .5rem; }
+
+/* === FORMULAIRE CONTACT === */
+
+.contact {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  color: #0f766e;
+}
+
+.field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+
+.field input,
+.field textarea {
+  padding: .6rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  outline: none;
+}
+
+.field input.error,
+.field textarea.error {
+  border-color: #ef4444;
+  background: #fee2e2;
+}
+
+button[type="submit"] {
+  background: #0f766e;
+  color: white;
+  padding: .7rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #14b8a6;
+}
+
 
 @media (min-width: 768px) {
   .header-inner {
@@ -253,5 +440,93 @@ button:focus-visible {
 @media (min-width: 1024px) {
   .nav a {
     padding: .5rem .9rem;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-track img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .carousel-track {
+    gap: .5rem;
+  }
+
+  .carousel button {
+    font-size: 1rem;
+    padding: .4rem .6rem;
+  }
+
+  .testimonial {
+    font-size: 1rem;
+    padding: 0 .5rem;
+  }
+
+  .testimonials h2 {
+    font-size: 1.35rem;
+  }
+
+  .like-btn {
+    padding: .35rem .6rem;
+    font-size: .9rem;
+  }
+
+  .comment-form input {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  .comment-form button {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 1rem;
+  }
+
+  .field input,
+  .field textarea {
+    font-size: .95rem;
+    padding: .5rem;
+  }
+
+  button[type="submit"] {
+    padding: .6rem 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .carousel-track img {
+    width: calc(50% - .7rem);
+    height: 180px;
+  }
+
+  .testimonial {
+    font-size: 1.05rem;
+  }
+
+  .like-btn {
+    padding: .45rem .75rem;
+  }
+
+  .field input,
+  .field textarea {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-track img {
+    height: 240px;
+  }
+
+  .testimonial {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    max-width: 900px;
+    margin: 3rem auto;
   }
 }
